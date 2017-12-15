@@ -1,0 +1,88 @@
+/* common design */
+body {
+  background-image: url(../img/bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+　height: 100vh;
+}
+img{
+    width: 100%;
+}
+/* top page */
+.top{
+    text-align: center;
+}
+.top_inner{
+    width: 70%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+    padding: 10rem 0;
+}
+.left_side{
+    float: left;
+    width: 39%;
+}
+.right_side{
+    float: right;
+    width: 50%;
+}
+.menu_btn img{
+    /*height: 2rem;
+    width: auto;*/
+}
+.menu_btn li{
+    margin-bottom: 4rem;
+}
+.menu_btn li:last-child{
+    margin-bottom: 0;
+}
+.menu_btn a{
+    display: block;
+    padding: 20px 0;
+    border-radius: 10px;
+    transition: .5s;
+}
+.menu_btn .btn1 a{
+    background: #C5FAFF;
+    border-bottom: #80abaf 5px solid;
+}
+.menu_btn .btn1 img{
+    width: 38%;
+}
+.menu_btn .btn1 a:hover{
+    background: #90c8ce;
+}
+.menu_btn .btn2 a{
+    background: #D0FF99;
+    border-bottom: #94b56c 5px solid;
+}
+.menu_btn .btn2 img{
+    width: 28%;
+}
+.menu_btn .btn2 a:hover{
+    background: #b8e286;
+}
+.menu_btn .btn3 a{
+    background: #FFAEAB;
+    border-bottom: #9e6c6a 5px solid;
+}
+.menu_btn .btn3 img{
+    width: 15%;
+}
+.menu_btn .btn3 a:hover{
+    background: #ca8a88;
+}
+.menu_btn .btn4 a{
+    background: #E8CFFF;
+    border-bottom: #9988a9 5px solid;
+}
+.menu_btn .btn4 img{
+    width: 34%;
+}
+.menu_btn .btn4 a:hover{
+    background: #ccb7e0;
+}
