@@ -14,13 +14,14 @@ img{
 /* top page */
 .top{
     text-align: center;
+    height: 100vh;
 }
 .top_inner{
     width: 70%;
     margin: 0 auto;
     overflow: hidden;
     text-align: center;
-    padding: 10rem 0;
+    padding: 5% 0;
 }
 .left_side{
     float: left;
@@ -35,14 +36,14 @@ img{
     width: auto;*/
 }
 .menu_btn li{
-    margin-bottom: 4rem;
+    margin-bottom:15%;
 }
 .menu_btn li:last-child{
     margin-bottom: 0;
 }
 .menu_btn a{
     display: block;
-    padding: 20px 0;
+    padding: 4% 0;
     border-radius: 10px;
     transition: .5s;
 }
