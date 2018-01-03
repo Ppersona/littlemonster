@@ -87,3 +87,39 @@ img{
 .menu_btn .btn4 a:hover{
     background: #ccb7e0;
 }
+/* play_page */
+body.play_page{
+  background-image: url(../img/bg2.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+　height: 100vh;
+}
+#word_image{
+    width: 50%;
+    margin:  0 auto;
+}
+#drop_area{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+#drag_area .drag{
+    margin: 0 5px;
+    max-width: 80px;
+}
+#drop_area .drop{
+    margin: 0 10px;
+    max-width: 80px;
+}
+#drag_area{
+    display: flex;
+    justify-content: center;
+    margin: 60px 0 0; 
+}
+.play_page .right_side {
+    float: right;
+    width: 58%;
+}
