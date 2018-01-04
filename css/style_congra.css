@@ -1,0 +1,180 @@
+/* common design */
+body {
+  background-image: url(../img/bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+　height: 100vh;
+}
+img{
+    width: 100%;
+    
+}
+/* top page */
+.top{
+    text-align: center;
+    height: 100vh;
+}
+.top_inner{
+    width: 85%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+.sec_img{
+    right: 75px;
+    top: 80px;
+    width: 60%;
+    margin: 0 auto;
+    overflow: hidden;
+    position: absolute;
+    
+}
+.how_play{
+    right: 290px;
+    top: 1px;
+    width: 30%;
+    position: absolute;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 1;
+
+}
+.alphabet{
+    right: 160px;
+    top: 560px;
+    width: 47%;
+    position: absolute;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 3;
+}
+.blue_sqr{
+    right: 240px;
+    top: 350px;
+    width: 37%;
+    position: absolute;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 3;
+}
+.char_one{
+    top: 95px;
+    right: 930px;
+    width: 24%;
+    position: absolute;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.apple_pic{
+    right: 440px;
+    top:95px;
+    width: 11%;
+    position: absolute;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 3;
+}
+.apple_pic_sec{
+    right: 430px;
+    top: 95px;
+    width: 13%;
+    position: absolute;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 4;
+}
+
+.rock_pic{
+    top: 270px;
+    right: 650px;
+    width: 30%;
+    position: absolute;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+.lola_pic{
+    top: 330px;
+    right: 110px;
+    width: 6%;
+    position: absolute;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+
+.look_pic{
+    top: 150px;
+    right: 695px;
+    width: 16%;
+    position: absolute;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 1;
+}
+
+.look_pic_sec{
+    top: 160px;
+    right: 605px;
+    width: 8%;
+    position: absolute;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 1;
+}
+.drop_pic{
+    top: 190px;
+    right: 65px;
+    width: 23%;
+    position: absolute;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 1;
+}
+.drop_pic_sec{
+    top: 240px;
+    right: 360px;
+    width: 8%;
+    position: absolute;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 1;
+}
+.drag_pic{
+    top: 490px;
+    right: 200px;
+    width: 19%;
+    position: absolute;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 1;
+}
+.drag_pic_sec{
+    top: 455px;
+    right: 490px;
+    width: 10%;
+    position: absolute;
+    margin: 0 auto;
+    overflow: hidden;
+    z-index: 1;
+}
+.home_btn{
+    width: 5%;
+    margin: 0 auto;
+    float: left;
+    position: relative;
+    padding: 0px 5px;
+    left: 20px;
+    top: 20px;
+}
+.home_btn:hover{
+    background: #FF2CE6;
+    border-radius: 10px;
+}
+
