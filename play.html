@@ -8,21 +8,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
 </head>
-<body>
+<body class="play_page">
+    <div id="overley">
+        <div class="cong">
+        <p class="cong_image"><img src="img/congratulation.png"></p>
+        <ul id="star"> 
+        </ul>
+        <ul id="menu">    
+        </ul>
+        </div>
+    </div><!-- //#overley -->
    <section class="top main">
         <div class="top_inner">
            <div id="character_area" class="left_side">
                <img src="img/character1.png" alt="character1">
            </div><!-- //.character_area -->
            <div class="right_side">
-               <ul class="menu_btn">
-                   <li class="btn1"><a href="file:///Users/macbooktouchbar/Desktop/chooseit/Choose_code/littlemonster/Congratulation.html"><img src="img/howtoplay.png"></a></li>
-                   <li class="btn2"><a href=""><img src="img/alphabet.png"></a></li>
-                   <li class="btn3"><a href="play.html"><img src="img/play.png"></a></li>
-                   <li class="btn4"><a href=""><img src="img/character.png"></a></li>
-               </ul>
+           <p id="word_image"></p>
+           <div id="drop_area">
+           </div><!-- //#right_side -->
+           <div id="drag_area">
+           </div><!-- //#right_side -->
            </div><!-- //.right_side -->
        </div><!-- //.top_inner -->
    </section><!-- //.main -->
+   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+   <script src="//ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+   <script src="js/play.js"></script>
 </body>
 </html>
