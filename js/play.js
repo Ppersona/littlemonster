@@ -85,12 +85,15 @@ $(function(){
     var play_count = 0; // count up when word is corrected
     var word_count = 0;
     var word_num = 0;
+    var check_word = [];
     var word_split;
     function playGame(arr,play_count){
+        //console.log(play_count);
         /* reset */
         word_count = 0;
         $('#drop_area').html('');
         $('#drag_area').html('');
+        $('#overley').hide();
         /* reset */
         
         $('#word_image').html('<img src="img/A-Z/'+ word_array[arr[play_count]] +'.png" alt="'+ word_array[arr[play_count]] +'">');
@@ -98,7 +101,6 @@ $(function(){
         word_num = word_split.length;
         for(var i = 0; i < word_split.length; i++){
             $('#drop_area').append('<div class="drop '+ word_split[i] +' drop'+ i +'"><img src="img/frame.png"></div>');
-            console.log(i);
             var flg = true;
             $('#drop_area .drop' + i).droppable({
                 accept: '.alphabet_' + word_split[i],
@@ -109,10 +111,39 @@ $(function(){
                     flg = true;
                 },
                 drop: function(e, ui) {
+                    var alpha_check = false;
+                    var obj = ui.draggable.attr('class').split(" ");
+//                    if(word_count == 0){
+//                        check_word[0] = obj[1];
+//                        word_count++;
+//                    }else{
+//                        for(var i = 0; i < check_word.length; i++){
+//                            //console.log('aaa');
+//                            if(check_word[i] == obj[1]){
+//                                alpha_check = true;
+//                                break;
+//                            }
+//                        }
+//                        if(!alpha_check){
+//                            ui.draggable.draggable({disabled: true});
+//                            check_word[word_count] = obj[1];
+//                            word_count++;
+//                        }
+//                    }
+                    
+                    ui.draggable.draggable({disabled: true});
+                    check_word[word_count] = obj[1];
                     word_count++;
-                    console.log(word_count);
+                    
+                    //console.log(word_count);
                     if(word_count == word_num){
-                       playGame(arr,play_count);
+                        $('#star').append('<li><img src="img/star.png"></li>');
+                        if(play_count == 4){
+                            $('#menu').html('<li><a href="/"><img src="img/menu.png"></a></li>');
+                        }else{
+                            $('#menu').html('<li><a href="/"><img src="img/menu.png"></a></li><li><a href="#" onclick="nextGame();"><img src="img/next.png"></a></li>');
+                        }
+                        $('#overley').show();
                     }
                     flg = false;
                 },
@@ -124,8 +155,10 @@ $(function(){
         
         // shuffle alphabet
         var alphabet = shuffleAlphabet(word_split);
+        console.log(alphabet);
+        console.log(word_split);
         for(var i = 0; i < alphabet.length; i++){
-            $('#drag_area').append('<div class="drag alphabet_'+ alphabet[i] +' drag'+ i +'"><img src="img/'+ alphabet[i] +'.png"></div>');
+            $('#drag_area').append('<div class="drag alphabet_'+ alphabet[i] + ' drag'+ i +'"><img src="img/'+ alphabet[i] +'.png"></div>');
         }
         
         $('#drag_area .drag').draggable({
@@ -140,12 +173,17 @@ $(function(){
                 $(this).removeClass('dragout');
             }
         });
-        play_count++;
+        
+        //play_count++;
+        
     }
     
     // show card image
-    function showCard(){
-        
+    window.nextGame = function (){
+        //console.log(play_count);
+        play_count++;
+        playGame(alphabet_random,play_count);
+        return false;
     }
     
     // choose 5 alphabet randomly
