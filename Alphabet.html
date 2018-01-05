@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Choose it! | Little Monster </title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link href="css/reset.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link href="css/alphabet.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+
+<script>
+
+    var slideIndex = 1;
+	show ivs(slideIndex);
+
+	function plusDivs(n) {
+  	showDivs(slideIndex += n);
+	}
+
+	function currentDiv(n) {
+  	showDivs(slideIndex = n);
+	}
+
+	function showDivs(n) {
+  	var i;
+  	var x = document.getElementsByClassName("card");
+  	var dots = document.getElementsByClassName("cardlist");
+  	if (n > x.length) {slideIndex = 1}    
+  	if (n < 1) {slideIndex = x.length}
+  	for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";  
+  	}
+  	for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace("", "");
+  	}
+  	x[slideIndex-1].style.display = "block";  
+  	dots[slideIndex-1].className += "";
+	}
+
+</script>
+
+</head>
+<section class="top main">
+        <div class="Heading">
+               <img src="img/alphabet.png" alt="alphabet">
+           </div><!-- //.Headding_area -->
+
+        <div class="slide">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_a.png">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_b.png">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_c.png">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_d.png">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_e.png">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_f.png">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_g.png">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_h.png">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_i.png">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_j.png">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_k.png">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_l.png">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_m.png">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_n.png">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_o.png">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_p.png">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_q.png">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_r.png">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_s.png">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_t.png">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_u.png">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_v.png">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_w.png">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_x.png">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_y.png">
+        	<img class="Card" src="img/alphabet-slide/Alphabetpage_z.png">
+        </div>
+
+        <div class="cardlist">
+        	<input class="A" type="image" src="img/alphabet-slide/aa.png"></input>
+        	<input class="B" type="image" src="img/alphabet-slide/bb.png"></input>
+        	<input class="C" type="image" src="img/alphabet-slide/cc.png"></input>
+        	<input class="D" type="image" src="img/alphabet-slide/dd.png"></input>
+        	<input class="E" type="image" src="img/alphabet-slide/ee.png"></input>
+        	<input class="F" type="image" src="img/alphabet-slide/ff.png"></input>
+        	<input class="G" type="image" src="img/alphabet-slide/gg.png"></input>
+        	<input class="H" type="image" src="img/alphabet-slide/hh.png"></input>
+        	<input class="I" type="image" src="img/alphabet-slide/ii.png"></input>
+        	<input class="J" type="image" src="img/alphabet-slide/jj.png"></input>
+        	<input class="K" type="image" src="img/alphabet-slide/kk.png"></input>
+        	<input class="L" type="image" src="img/alphabet-slide/ll.png"></input>
+        	<input class="M" type="image" src="img/alphabet-slide/mm.png"></input>
+        	<input class="N" type="image" src="img/alphabet-slide/nn.png"></input>
+        	<input class="O" type="image" src="img/alphabet-slide/oo.png"></input>
+        	<input class="P" type="image" src="img/alphabet-slide/pp.png"></input>
+        	<input class="Q" type="image" src="img/alphabet-slide/qq.png"></input>
+            <input class="R" type="image" src="img/alphabet-slide/rr.png"></input>
+        	<input class="S" type="image" src="img/alphabet-slide/ss.png"></input>
+        	<input class="T" type="image" src="img/alphabet-slide/tt.png"></input>
+        	<input class="U" type="image" src="img/alphabet-slide/uu.png"></input>
+        	<input class="V" type="image" src="img/alphabet-slide/vv.png"></input>
+        	<input class="W" type="image" src="img/alphabet-slide/ww.png"></input>
+        	<input class="X" type="image" src="img/alphabet-slide/xx.png"></input>
+        	<input class="Y" type="image" src="img/alphabet-slide/yy.png"></input>
+        	<input class="Z" type="image" src="img/alphabet-slide/zz.png"></input>
+        </div>
+
+        		
+        		
+        		
+
+
+
+
+
+        	
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,246 @@
+
+.top_main{
+	position: relative;
+	max-width: 80%
+}
+
+.slide {
+	max-width:10px;
+}
+.card img {
+	display:none;
+	width:5px;
+	
+}
+
+.cardlist{
+	position: inline-block; 
+	margin: 60px
+	padding-bottom:2 px;
+	width:5%;
+}
+
+.cardlist.A {
+    background:url(image/alphabet-slide/Alphabetpage_a.png) no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border:none;
+}
+
+.cardlist.B {
+    background:url(image/alphabet-slide/Alphabetpage_b.png) no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border: none;
+}
+
+.cardlist.C {
+    background:url(image/alphabet-slide/Alphabetpage_c.png) no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border: none;
+
+}
+
+.cardlist.D {
+    background:url(image/alphabet-slide/Alphabetpage_d.png)no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border: none;
+}
+
+.cardlist.E {
+    background:url(image/alphabet-slide/Alphabetpage_e.png)no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border: none;
+
+}
+
+.cardlist.F {
+    background:url(image/alphabet-slide/Alphabetpage_f.png)no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border: none;
+
+}
+
+.cardlist.G {
+    background:url(image/alphabet-slide/Alphabetpage_g.png)no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border: none;
+
+}
+.cardlist.H {
+    background:url(image/alphabet-slide/Alphabetpage_h.png)no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border: none;
+
+}
+.cardlist.I {
+    background:url(image/alphabet-slide/Alphabetpage_i.png)no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border: none;
+
+}
+.cardlist.J {
+    background:url(image/alphabet-slide/Alphabetpage_j.png)no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border: none;
+
+}
+.cardlist.K {
+    background:url(image/alphabet-slide/Alphabetpage_k.png)no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border: none;
+
+}
+.cardlist.L {
+    background:url(image/alphabet-slide/Alphabetpage_l.png)no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border: none;
+
+}
+.cardlist.M{
+    background:url(image/alphabet-slide/Alphabetpage_m.png)no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border: none;
+
+}
+.cardlist.N {
+    background:url(image/alphabet-slide/Alphabetpage_n.png)no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border: none;
+
+}
+.cardlist.O {
+    background:url(image/alphabet-slide/Alphabetpage_o.png)no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border: none;
+
+}
+.cardlist.P {
+    background:url(image/alphabet-slide/Alphabetpage_p.png)no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border: none;
+
+}
+
+.cardlist.Q {
+    background:url(image/alphabet-slide/Alphabetpage_q.png)no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border: none;
+
+}
+
+.cardlist.R {
+    background:url(image/alphabet-slide/Alphabetpage_r.png)no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border: none;
+
+}
+
+.cardlist.S {
+    background:url(image/alphabet-slide/Alphabetpage_s.png)no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border: none;
+
+}
+
+.cardlist.T {
+    background:url(image/alphabet-slide/Alphabetpage_t.png)no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border: none;
+
+}
+
+.cardlist.U {
+    background:url(image/alphabet-slide/Alphabetpage_u.png)no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border: none;
+
+}
+
+.cardlist.V {
+    background:url(image/alphabet-slide/Alphabetpage_v.png)no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border: none;
+
+}
+
+.cardlist.W {
+    background:url(image/alphabet-slide/Alphabetpage_w.png)no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border: none;
+
+}
+
+.cardlist.X {
+    background:url(image/alphabet-slide/Alphabetpage_x.png)no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border: none;
+
+}
+
+.cardlist.Y {
+    background:url(image/alphabet-slide/Alphabetpage_y.png)no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border: none;
+
+}
+
+.cardlist.Z {
+    background:url(image/alphabet-slide/Alphabetpage_z.png)no-repeat;
+    cursor:pointer;
+    width: 50px;
+    height: 80px;
+    border: none;
+
+}
+
+
+
