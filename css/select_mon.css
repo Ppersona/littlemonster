@@ -1,0 +1,68 @@
+.top_main{
+	position: relative;
+}
+
+.selection_inner{
+    width:95%;
+    height:98%;
+    margin: 4% 2% 0 2%;
+    overflow: hidden;
+    text-align: center;
+    padding: auto;
+    border: 1px none #fff;
+    border-radius: 10px;
+   	background-color: rgba(255,255,255,0.3);
+    -webkit-background-clip: padding-box; /* for Safari */
+    background-clip: padding-box; /* for IE9+, Firefox 4+, Opera, Chrome */ 
+}
+
+#btn_home{
+	width: 5%;
+	position: absolute;
+	left:1%;
+	top:3%; 
+}
+
+#title_chooseit{
+	float:left;
+	width: 35%;
+	padding:2% 0 5% 10%;
+}
+
+
+.left_side_mon{
+	width: 60%;
+	float: left;
+}
+
+.left_side_mon img{
+	width: 70%;
+	margin: 0 0 2% 0;
+}
+
+.right_side_mon{
+	width: 40%;
+	float:right;
+}
+
+.btn_mon img{
+	width: 38%;
+	float: left;
+}
+
+.monster{
+	position: absolute;
+    width: 40% !important;
+    left: 100px;
+    display: none;
+}
+
+
+
+.clear{
+	clear: both;
+}
+
+
+
+

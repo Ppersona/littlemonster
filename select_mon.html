@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Choose it! | select a monster</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+    <link href="css/reset.css" rel="stylesheet" type="text/css" media="all">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <link href="css/select_mon.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
+    <script>
+      function monsterMouseOver(target) {
+        let monsterName = $(target).attr('name');
+        if (monsterName == 'lola'){
+          target.src="img/char01_frame.png";
+        } else if (monsterName == 'toby') {
+          target.src="img/char02_frame.png"
+        } else if (monsterName == 'gus') {
+          target.src="img/char03_frame.png"
+        } else if (monsterName == 'rocko') {
+          target.src="img/char04_frame.png"
+        } else if (monsterName == 'lexi') {
+          target.src="img/char05_frame.png"
+        }
+
+        allNames = new Set(['lola', 'toby', 'gus', 'rocko', 'lexi']);
+        allNames.delete(monsterName);
+        for(name of allNames){
+          $('#' + name).fadeOut(100);
+        }
+        $('#' + monsterName).fadeIn(100);
+      }
+
+      function monsterMouseOut(target) {
+        let monsterName = $(target).attr('name');
+        if (monsterName == 'lola'){
+          target.src="img/char01.png";
+        } else if (monsterName == 'toby') {
+          target.src="img/char02.png"
+        } else if (monsterName == 'gus') {
+          target.src="img/char03.png"
+        } else if (monsterName == 'rocko') {
+          target.src="img/char04.png"
+        } else if (monsterName == 'lexi') {
+          target.src="img/char05.png"
+        }
+      }
+    </script>
+</head>
+<body>
+   <section class="top main">
+        <div class="selection_inner">
+          <a href="index.html"><img src="img/home.png" alt="btn_home" id="btn_home"></a>
+          <img src="img/chooseit.png" alt="title_chooseit" id="title_chooseit">
+
+          <div class ="clear"></div>
+
+           <div id="character_area" class="left_side_mon">
+               <img class="monster" style="display: inline" src="img/lola.png" alt="character1" id="lola">
+               <img class="monster" src="img/toby.png" alt="character2" id="toby">
+               <img class="monster" src="img/gus.png" alt="character3" id="gus">
+               <img class="monster" src="img/rocko.png" alt="character4" id="rocko">
+               <img class="monster" src="img/lexi.png" alt="character5" id="lexi">
+           </div><!-- //.character_area -->
+           <div class="right_side_mon">
+            <div class = "btn_mon">
+               <ul class="char_list">
+                   <li class="btn_char1"><img src="img/char01.png" name="lola" onmouseover="monsterMouseOver(this)" onmouseout="monsterMouseOut(this)" /></li>
+                   <li class="btn_char2"><img src="img/char02.png" name="toby" onmouseover="monsterMouseOver(this)" onmouseout="monsterMouseOut(this)" /></li>
+                   <li class="btn_char3"><img src="img/char03.png" name="gus" onmouseover="monsterMouseOver(this)" onmouseout="monsterMouseOut(this)" /></li>
+                   <li class="btn_char4"><img src="img/char04.png" name="rocko" onmouseover="monsterMouseOver(this)" onmouseout="monsterMouseOut(this)" /></li>
+                   <li class="btn_char4"><img src="img/char05.png" name="lexi" onmouseover="monsterMouseOver(this)" onmouseout="monsterMouseOut(this)" /></li>
+               </ul>
+             </div>
+           </div><!-- //.right_side -->
+       </div><!-- //.selection_inner -->
+   </section><!-- //.main -->
+</body>
+</html>
